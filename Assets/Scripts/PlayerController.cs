@@ -24,7 +24,10 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D c)
     {
+        if (a == null)
+        {
         a = c.gameObject;
+        }
     }
     private void OnTriggerExit2D(Collider2D other) {
         a = null;

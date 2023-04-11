@@ -298,6 +298,18 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9091200682444680800, guid: 141d79e56da621e44823757737cace99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091200682444680800, guid: 141d79e56da621e44823757737cace99, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091200682444680800, guid: 141d79e56da621e44823757737cace99, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091200682444680800, guid: 141d79e56da621e44823757737cace99, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -337,6 +349,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9091200682444680800, guid: 141d79e56da621e44823757737cace99, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 141d79e56da621e44823757737cace99, type: 3}
 --- !u!1 &1142087923 stripped
@@ -358,7 +374,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9154045814058158449, guid: 6979cc8cfd93b254b87b544f8194c9ee, type: 3}
       propertyPath: od
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -9154045814058158449, guid: 6979cc8cfd93b254b87b544f8194c9ee, type: 3}
       propertyPath: bpm
@@ -378,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 1142087923}
     - target: {fileID: -9154045814058158449, guid: 6979cc8cfd93b254b87b544f8194c9ee, type: 3}
       propertyPath: runSpeed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -9154045814058158449, guid: 6979cc8cfd93b254b87b544f8194c9ee, type: 3}
       propertyPath: initiated
