@@ -6,6 +6,7 @@ public class NoteManager : MonoBehaviour
 {
 [SerializeField] public float bpm;
 // Time is in terms of beats.
+[SerializeField] public float[] measure;
 [SerializeField] public float[] time;
 [SerializeField] public float[] length;
 [SerializeField] public float elapsedTime;
@@ -19,8 +20,6 @@ public class NoteManager : MonoBehaviour
 [SerializeField] private GameObject note;
 [SerializeField] private GameObject player;
 [SerializeField] private float od;
-
-
     // Start is called before the first frame update
 private IEnumerator color()
 {
@@ -30,11 +29,13 @@ private IEnumerator color()
 }
     private void noteSpawn()
     {
+        int i = 0;
         foreach (float t in time)
         {
             GameObject n = Instantiate(note);
-            n.transform.position = new Vector3((t * beatLength * runSpeed),0,0);
+            n.transform.position = new Vector3(((((measure[i] == 0 ? measure[i]: measure[i]-1) *4) + (t-1)) * beatLength * runSpeed),0,0);
             n.transform.localScale = new Vector3(1/od,2,1);
+            i += 1;
 
         }
     }
@@ -42,7 +43,7 @@ private IEnumerator color()
     {
 
         beatLength = 60/bpm;
-        noteSpawn();
+        //noteSpawn();
     }
 
     // Update is called once per frame
