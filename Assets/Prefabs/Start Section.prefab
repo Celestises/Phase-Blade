@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -4221966637843548919}
   - component: {fileID: 3969968875071154480}
   m_Layer: 0
-  m_Name: Note
-  m_TagString: Note
+  m_Name: Start Section
+  m_TagString: Start
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

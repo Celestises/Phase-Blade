@@ -6,6 +6,7 @@ public class NoteManager : MonoBehaviour
 {
 [SerializeField] public float bpm;
 // Time is in terms of beats.
+[SerializeField] public bool musicSection;
 [SerializeField] public float[] measure;
 [SerializeField] public float[] time;
 [SerializeField] public float[] length;
@@ -20,6 +21,9 @@ public class NoteManager : MonoBehaviour
 [SerializeField] private GameObject note;
 [SerializeField] private GameObject player;
 [SerializeField] private float od;
+[SerializeField] public float offset;
+[SerializeField] public Note currentNote;
+[SerializeField] public float hitWindow;
     // Start is called before the first frame update
 private IEnumerator color()
 {
@@ -49,6 +53,8 @@ private IEnumerator color()
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (musicSection)
+        {
         if (!initiated)
         {
             elapsedTime += Time.fixedDeltaTime;
@@ -75,6 +81,7 @@ private IEnumerator color()
             sinceLast = 0f;
             StartCoroutine(color());
             
+        }
         }
         }
     }
